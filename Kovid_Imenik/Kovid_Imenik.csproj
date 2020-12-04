@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E0DE13B8-B53B-416B-B3D8-B8ECE7A2DD7E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Kovid_Imenik</RootNamespace>
+    <AssemblyName>Kovid_Imenik</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Build.Tasks.v4.0" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Report.Viewer.11.0.0.0\lib\net\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Report.Viewer.11.0.0.0\lib\net\Microsoft.ReportViewer.ProcessingObjectModel.DLL</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms">
+      <HintPath>..\..\..\..\source\repos\Test\packages\Microsoft.ReportViewer.11.0.3366.16\lib\Microsoft.ReportViewer.WinForms.DLL</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.22.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cela_Lista_Pacijenata.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cela_Lista_Pacijenata.Designer.cs">
+      <DependentUpon>Cela_Lista_Pacijenata.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dodaj_pacijenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dodaj_pacijenta.Designer.cs">
+      <DependentUpon>Dodaj_pacijenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlavniProzor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GlavniProzor.Designer.cs">
+      <DependentUpon>GlavniProzor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Izaberi_Pacijenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Izaberi_Pacijenta.Designer.cs">
+      <DependentUpon>Izaberi_Pacijenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Koriguj_Pacijenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Koriguj_Pacijenta.Designer.cs">
+      <DependentUpon>Koriguj_Pacijenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Koriguj_svoje_podatke.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Koriguj_svoje_podatke.Designer.cs">
+      <DependentUpon>Koriguj_svoje_podatke.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Korisnik.cs" />
+    <Compile Include="Moja_Baza_Podataka.cs" />
+    <Compile Include="Pacijent.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Registracija_Logovanje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registracija_Logovanje.Designer.cs">
+      <DependentUpon>Registracija_Logovanje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tabelaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tabelaDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Uopstenje.cs" />
+    <EmbeddedResource Include="Cela_Lista_Pacijenata.resx">
+      <DependentUpon>Cela_Lista_Pacijenata.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dodaj_pacijenta.resx">
+      <DependentUpon>Dodaj_pacijenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GlavniProzor.resx">
+      <DependentUpon>GlavniProzor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Izaberi_Pacijenta.resx">
+      <DependentUpon>Izaberi_Pacijenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Koriguj_Pacijenta.resx">
+      <DependentUpon>Koriguj_Pacijenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Koriguj_svoje_podatke.resx">
+      <DependentUpon>Koriguj_svoje_podatke.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Registracija_Logovanje.resx">
+      <DependentUpon>Registracija_Logovanje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report1.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="tabelaDataSet.xsc">
+      <DependentUpon>tabelaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="tabelaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tabelaDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tabelaDataSet.xss">
+      <DependentUpon>tabelaDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

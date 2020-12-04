@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30320.27
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kovid_Imenik", "Kovid_Imenik\Kovid_Imenik.csproj", "{E0DE13B8-B53B-416B-B3D8-B8ECE7A2DD7E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{471FD59B-5798-42F7-BC0A-BA212202F10F}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E0DE13B8-B53B-416B-B3D8-B8ECE7A2DD7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0DE13B8-B53B-416B-B3D8-B8ECE7A2DD7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0DE13B8-B53B-416B-B3D8-B8ECE7A2DD7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0DE13B8-B53B-416B-B3D8-B8ECE7A2DD7E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FF37DB06-0902-42C3-86F3-B4E2B51028B7}
+	EndGlobalSection
+EndGlobal
